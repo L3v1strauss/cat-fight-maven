@@ -1,0 +1,8 @@
+# Project exclude paths
+/api-module/target/
+/dao-module/target/
+/entity-module/target/
+/exception-module/target/
+/main-module/target/
+/service-module/target/
+/util-module/target/
