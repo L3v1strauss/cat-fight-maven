@@ -24,11 +24,11 @@ public class SavedGame {
                 System.out.println("У " + cat2.getName() + " осталось мало здоровья хотите сохранить игру? Введите YES/NO");
             }
             if (yes.equalsIgnoreCase(scanner.nextLine())) {
-                System.out.println("Игра сохранена)");
                 try (ObjectOutputStream objectOutputStream1 = new ObjectOutputStream(new FileOutputStream(path1.toFile()));
                      ObjectOutputStream objectOutputStream2 = new ObjectOutputStream(new FileOutputStream(path2.toFile()))) {
                     objectOutputStream1.writeObject(cat1);
                     objectOutputStream2.writeObject(cat2);
+                    System.out.println("Игра сохранена)");
                 }
             } else {
                 System.out.println("Игра не сохранена(");
